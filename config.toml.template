@@ -1,0 +1,21 @@
+[info]
+name = "NostrTheRelays"
+description = "A Nostr relay"
+pubkey = "npub1wy23yu45j6cydsdds9ktcs545usytsyfg5kyt40m6pmr969kt5pqhtq8ma"
+contact = "iq9@iq9.io"
+
+[network]
+port = 8080
+address = "0.0.0.0"
+
+[options]
+# delete_after = 3600
+
+[database]
+mode = "postgres"
+# host = "127.0.0.1"
+host = "/var/run/postgresql"
+port = 5432
+user = "nostr"
+password = "bmwbmwbmwbmw"
+database = "nostr"
