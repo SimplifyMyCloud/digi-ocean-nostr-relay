@@ -1,0 +1,12 @@
+[Unit]
+Description=Nostr RS Relay
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/root/nostr-rs-relay
+ExecStart=/root/nostr-rs-relay/target/release/nostr-rs-relay
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
